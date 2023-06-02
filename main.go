@@ -17,7 +17,7 @@ func main() {
 	router.GET("/edit/:id", web.EditItem)
 	router.POST("/edit/:id", web.EditItemApi)
 	router.POST("/delete/:id/:token", web.DeleteItemApi)
-	err := router.Run(":8080")
+	err := router.Run(":80")
 	if err != nil {
 		return
 	}
