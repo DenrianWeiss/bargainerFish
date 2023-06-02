@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="zh-CN"></html>
+<head>
+    <title>{{ .name }}</title>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+    <link rel="stylesheet" href="/static/item.css">
+</head>
+<body>
+<header>
+    <div class="mdui-toolbar mdui-color-light-green" style="margin-bottom: 10px">
+        <span class="mdui-typo-title">{{ .name }}</span>
+        <div class="mdui-toolbar-spacer"></div>
+    </div>
+</header>
+<div class="mdui-container mdui-typo">
+    <h2>{{ .name }}</h2>
+    <h4>{{ .price }}</h4>
+    <div class="mdui-typo main" style="column-gap: 12px;">
+        <img src="{{ .image }}" alt="{{ .name }}" style="height: auto;" class="image"/>
+        <div>{{ .desc }}</div>
+        {{ .full }}
+    </div>
+</div>
+<footer>
+
+</footer>
+</body>

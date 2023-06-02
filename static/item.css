@@ -1,0 +1,14 @@
+.main {
+    column-count: 1;
+}
+
+.image {
+    width: 100%;
+}
+
+@media(orientation: landscape) {
+    .main {
+        column-count: 2;
+    }
+
+}

@@ -1,0 +1,29 @@
+@media(min-width: 768px) {
+    .main {
+        column-count: 2;
+    }
+
+    .card {
+        width: calc(100% - 8px)
+    }
+}
+
+@media(min-width: 1024px) {
+    .main {
+        column-count: 3;
+    }
+
+    .card {
+        width: calc(100% - 8px)
+    }
+}
+
+@media(max-width: 767px) {
+    .main {
+        column-count: 1;
+    }
+
+    .card {
+        width: calc(100% - 8px)
+    }
+}

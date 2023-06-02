@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="zh-CN"></html>
+<head>
+    <title>Create Item</title>
+    <link rel="stylesheet" href="https://unpkg.com/mdui@1.0.2/dist/css/mdui.min.css"/>
+    <script src="https://unpkg.com/mdui@1.0.2/dist/js/mdui.min.js"></script>
+</head>
+<body>
+<header>
+    <div class="mdui-toolbar mdui-color-green">
+        <span class="mdui-typo-title">Create Item</span>
+        <div class="mdui-toolbar-spacer"></div>
+    </div>
+</header>
+<div class="mdui-container">
+    <form action="/add" method="post" enctype='multipart/form-data'>
+        <label for="image" class="mdui-textfield-label">Title Image</label>
+        <input type="file" id="image" name="image" accept="image/*">
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">Token</label>
+            <input class="mdui-textfield-input" type="text" name="token"/>
+        </div>
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">Name</label>
+            <input class="mdui-textfield-input" type="text" name="name"/>
+        </div>
+        <div class="mdui-textfield mdui-textfield-floating-label">
+            <label class="mdui-textfield-label">Price</label>
+            <input class="mdui-textfield-input" type="text" name="price"/>
+        </div>
+        <div class="mdui-textfield">
+            <label class="mdui-textfield-label">Short Descripton</label>
+            <textarea class="mdui-textfield-input" name="description"></textarea>
+        </div>
+        <div class="mdui-textfield">
+            <label class="mdui-textfield-label">Full Descripton</label>
+            <textarea class="mdui-textfield-input" name="full"></textarea>
+        </div>
+
+        <input type="submit" class="mdui-btn mdui-btn-raised mdui-ripple"></input>
+    </form>
+</div>
+<footer>
+
+</footer>
+</body>
