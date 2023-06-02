@@ -1,5 +1,5 @@
 services:
-  taroly:
+  web:
     labels:
       - "traefik.enable=true"
       - "traefik.docker.network=traefik_traefik"
