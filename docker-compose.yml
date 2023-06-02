@@ -2,8 +2,6 @@ services:
   web:
     image: nekogawa/fish
     restart: unless-stopped
-    ports:
-      - "80:8080"
     volumes:
       - ./db:/usr/local/bin/exe/db
       - ./images:/usr/local/bin/exe/static/images
