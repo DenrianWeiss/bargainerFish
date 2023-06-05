@@ -27,3 +27,7 @@
         width: calc(100% - 8px)
     }
 }
+
+.card {
+    margin-top: 12px;
+}
